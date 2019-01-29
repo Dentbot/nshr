@@ -1,9 +1,8 @@
-﻿const Discord = require('discord.js');
-const A7MD = new Discord.Client();
-
+const Discord = require("discord.js");
+const client = new Discord.Client();
 console.log("BOT ONLINE");
  
-A7MD.on("guildMemberAdd", member => {
+client.on("guildMemberAdd", member => {
   member.createDM().then(function (channel) {
   return channel.send(` 
 **
@@ -14,4 +13,4 @@ A7MD.on("guildMemberAdd", member => {
 **`) 
 }).catch(console.error)
 })
-A7MD.login('NTM4Mzk4MzQ1NTM0ODk4MjE2.DzFa4g.Ho0wBrzKRk9VA6oRuKTiltRVKY8');
+client.login(process.env.BOT_TOKEN);// لا تغير فيها شيء

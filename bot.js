@@ -1,15 +1,17 @@
-const Discord = require("discord.js");
-const client = new Discord.Client();
+const Discord = require('discord.js');
+const A7MD = new Discord.Client();
+
+console.log("BOT ONLINE");
  
-client.on("guildMemberAdd", member => {
+A7MD.on("guildMemberAdd", member => {
   member.createDM().then(function (channel) {
   return channel.send(` 
 **
 سلام عليكم 
 لو سمحت ممكن تدخل سيرفرى
-                               [https://discord.gg/S2snEk] 
-الدعووة خاصة لك ... [ ${member}  ]
+                               [https://discord.gg/nK9bgGW] 
+الدعووة خاصة لك ياقلبي  ... [ ${member}  ]
 **`) 
 }).catch(console.error)
 })
-client.login(process.env.BOT_TOKEN);// لا تغير فيها شيء
+A7MD.login('NTM4Mzk4MzQ1NTM0ODk4MjE2.DzFa4g.Ho0wBrzKRk9VA6oRuKTiltRVKY8');
